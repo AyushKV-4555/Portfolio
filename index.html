@@ -2,215 +2,293 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ayush Kumar Verma | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush Kumar Verma - Data Science Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujl5W5F5T5S1a6rD7T4U+V9L7t7z27L3d5o5N3K2fR5qE5L2dF0K3pG5O5O5o5Q5/D1P5o5O5o5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="navbar">
-    <div class="logo">Portfolio</div>
+
+  <nav class="navbar">
+    <a href="#" class="logo">Portfolio</a>
     <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About me</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
       <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="assets/images/IIT_Dhanbad___Resume__OnCampus___8_ (2).pdf" class="download-btn" download target="_blank">Download CV</a>
-</li>
     </ul>
-  </header>
+  </nav>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-content">
-    <h3>Hello, I'm</h3>
-    <h1>Ayush Kumar Verma</h1>
-    <h2>Aspiring Data Scientist | IIT (ISM) Dhanbad</h2>
+  <main class="main-content">
 
-    <!-- ABOUT ME -->
-    <p class="about-me">
-      I'm Ayush, a master's student at IIT Dhanbad, studying Mathematics and Computing.  
-      I never planned to get into data science — but the more I learned, the more I liked it. 
-      I found it fascinating how raw data can tell real stories and solve actual problems.  
-      Over time, I’ve built and deployed many projects.
-      I enjoy working on practical things — taking a messy dataset and turning it into something useful.  
-      For me, it’s not just about models or accuracy — it’s about making something that works and helps someone.
-    </p>
-
-    <!-- 🔗 SOCIAL ICONS -->
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/24ms0026" class="icon-btn" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
+    <section id="home" class="hero-section">
+  <div class="hero-container">
+    
+    <!-- Left Side: Text -->
+    <div class="hero-text">
+      <h2>Ayush Kumar Verma</h2>
+      <p class="tagline">Aspiring Data Scientist | Mathematics & Computing @ IIT Dhanbad</p>
+      <p class="intro-text">
+        Passionate about using <strong>AI and data science</strong> to solve real-world challenges —
+        from smarter healthcare to better investment insights.
+      </p>
+      <div class="cta-buttons">
+        <a href="https://drive.google.com/file/d/1MxBF8IehQd2T_g80qHlruMGXy9zVn5CR/view?usp=sharing" class="btn btn-primary" download>
+          Download Resume <i class="fas fa-download"></i>
         </a>
-        <a href="https://github.com/Ayushms26" class="icon-btn" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
+        <a href="#contact" class="btn btn-secondary">
+          Get In Touch <i class="fas fa-arrow-right"></i>
         </a>
-        <a href="https://medium.com/@24ms0026" class="icon-btn" target="_blank" title="Medium">
-            <i class="fab fa-medium-m"></i>
-        </a>
-        <a href="mailto:24ms0026@iitism.ac.in" class="icon-btn" title="Email">
-            <i class="fas fa-envelope"></i>
-        </a>
+      </div>
     </div>
-  </div>
 
-  <div class="hero-img">
-    <img src="assets/images/my-img-for-portfolio.jpg" alt="Profile Photo">
-  </div>
-</section>
+    <!-- Right Side: Image -->
+    <div class="hero-image">
+      <img src="image\my-img.jpg" alt="Ayush's profile picture" class="profile-img" />
+    </div>
+
+    </div>
+  </section>
 
 
-  <!-- More sections: you can add them later below -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+
+      <p>
+        I’ve always been fascinated by how mathematics can explain patterns in the real world. During my journey at IIT Dhanbad, this curiosity gradually evolved into a passion for data science and artificial intelligence—because in today’s AI era, I believe technology should not only solve problems but also make life easier and more advanced.
+      </p>
+
+      <p>
+        My projects reflect this philosophy. Whether it’s building a <strong>multimodal assistant</strong> that allows users to interact naturally with AI for healthcare guidance, or developing a <strong>Property Investment Analytics Platform</strong> that helps people make smarter financial decisions, my focus has always been on designing solutions that directly fulfill user needs. 
+      </p>
+
+      <p>
+        For example, on most real estate sites like <em>99acres</em>, you’ll find property price and location details—but there’s little support in understanding whether a property is truly profitable or how it compares to others. That’s the kind of gap I aim to close through data-driven insights.
+      </p>
+
+      <p>
+        For me, data science is more than algorithms and models—it’s about bridging the gap between people and technology. I see myself as a lifelong learner and AI enthusiast, constantly exploring how intelligent systems can create real-world impact.
+      </p>
+
+      <div class="skills-section">
+        <h3>Core Skills</h3>
+        <div class="skills-list">
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">R</span>
+          <span class="skill-badge">SQL</span>
+          <span class="skill-badge">C++</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">Machine Learning</span>
+          <span class="skill-badge">Deep Learning</span>
+          <span class="skill-badge">TensorFlow</span>
+          <span class="skill-badge">Scikit-learn</span>
+          <span class="skill-badge">HuggingFace</span>
+          <span class="skill-badge">Docker</span>
+          <span class="skill-badge">AWS</span>
+          <span class="skill-badge">FastAPI</span>
+          <span class="skill-badge">Git</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="image\advancedmd-lifestyle-aiTablet.webp" alt="Multimodal Healthcare Assistant thumbnail" class="project-image" />
+        <div class="project-details">
+          <h3>Multimodal Healthcare Assistant</h3>
+          <p>An AI tool that uses text and images to detect mental health issues and diseases with over 92% accuracy.</p>
+          <div class="tech-stack-list">
+            <span class="tech-badge">BERT</span>
+            <span class="tech-badge">T5</span>
+            <span class="tech-badge">CNN</span>
+            <span class="tech-badge">AWS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AyushKV-4555/SmartCare-AI" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="image\home-img2.jpg" alt="Image Classification API thumbnail" class="project-image" />
+        <div class="project-details">
+          <h3>Property Investment Analytics Platform</h3>
+          <p>An interactive platform that helps homebuyers and investors make data-driven decisions by analyzing property ROI, rental yields, and cash flow.</p>
+          <div class="tech-stack-list">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">ML</span>
+            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">AWS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AyushKV-4555/real-estate-intelligence-tool" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="image\rain-img.webp" alt="Sales Forecasting Model thumbnail" class="project-image" />
+        <div class="project-details">
+          <h3>Real-TimeWeather Forecasting System</h3>
+          <p>A machine learning model that predicts 7-day weather with 88% accuracy and is deployed on a real-time Streamlit dashboard.</p>
+          <div class="tech-stack-list">
+            <span class="tech-badge">ML</span>
+            <span class="tech-badge">API Integration</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/AyushKV-4555/Weather-forecasting-system" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section id="blogs" class="blogs-section">
+      <h2>Blogs & Articles</h2>
+      <div class="blog-grid">
+        <a href="https://medium.com/@24ms0026/turning-real-estate-data-into-smart-decisions-my-end-to-end-analytics-system-75e4920dd613" target="_blank" class="blog-card">
+          <h4>Turning Real Estate Data into Smart Decisions</h4>
+          <p>Is this flat really worth the price? Is it a smart long-term investment?</p>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="#" target="_blank" class="blog-card">
+          <h4>A Practical Guide to Natural Language Processing (NLP)</h4>
+          <p>NLP enables computers to understand human speech, from slang to sarcasm.</p>
+          <span class="read-more">Read More <i class="fas fa-arrow-right"></i></span>
+        </a>
+        
+      </div>
+    </section>
+
+    <section id="skills" class="resume-section">
+      <h2>Resume & Skills</h2>
+      <div class="resume-container">
+        <a href="https://drive.google.com/file/d/1MxBF8IehQd2T_g80qHlruMGXy9zVn5CR/view?usp=sharing" class="btn btn-primary" download>Download Full Resume <i class="fas fa-download"></i></a>
+        <div class="skills-categories-grid">
+          <div class="skill-category">
+            <h3>Programming & Databases</h3>
+            <div class="skills-list-small">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">R</span>
+              <span class="skill-badge">Bash/Shell</span>
+              <span class="skill-badge">LaTeX</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Machine Learning & Deep Learning</h3>
+            <div class="skills-list-small">
+              <span class="skill-badge">TensorFlow</span>
+              <span class="skill-badge">Keras</span>
+              <span class="skill-badge">Scikit-learn</span>
+              <span class="skill-badge">LLMs</span>
+              <span class="skill-badge">HuggingFace</span>
+              <span class="skill-badge">NLP</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Cloud & Deployment</h3>
+            <div class="skills-list-small">
+              <span class="skill-badge">AWS</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">FastAPI</span>
+              <span class="skill-badge">CI/CD Pipelines</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Platforms</h3>
+            <div class="skills-list-small">
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">Jupyter</span>
+              <span class="skill-badge">Colab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <section id="certificates" class="certificates-section">
+  <h2>Certificates</h2>
+  <div class="certificates-grid">
+
+    <div class="certificate-card">
+      <h3>AI Engineer Internship – Zetheta Algorithms Pvt. Ltd.</h3>
+      <p>Built backend pipelines for AI/NLP microservices (career prediction, skills-gap analysis, 
+        job-readiness scoring). Developed text embeddings to improve candidate–job matching accuracy by 30%.</p>
+      <a href="image\Ayush Internship Certificate.pdf" class="btn-cert" target="_blank">View Certificate</a>
+    </div>
+    
+    <div class="certificate-card">
+      <h3>Data Science Mentorship Program 2.0 – CampusX</h3>
+      <p>Comprehensive 1-year mentorship covering Python, visualization, data preprocessing, ML models, and deployment practices.</p>
+      <a href="image/DSMP Certificate.png" class="btn-cert" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="certificate-card">
+      <h3>AI / Machine Learning Workshop – IIT Patna</h3>
+      <p>Hands-on workshop on AI fundamentals, deep learning basics, and real-world problem-solving using ML tools.</p>
+      <a href="image/IIT Patna certificate.jpg" class="btn-cert" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="certificate-card">
+      <h3>Natural Language Processing (NLP) – Infosys Springboard</h3>
+      <p>Focused on text processing, sentiment analysis, and modern NLP techniques for real-world applications.</p>
+      <a href="image/inforsys NLP certificate.pdf" class="btn-cert" target="_blank">View Certificate</a>
+    </div>
+
+    </div>
+  </section>
+
+    <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p class="contact-subtext">
+      Feel free to reach out to me for collaborations or just to say hello! 
+      I'm always open to discussing new projects and opportunities.
+    </p>
+    
+    <form action="https://formspree.io/f/xqadgadr" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+
+    <!-- Social Media Icons -->
+    <div class="social-links">
+      <a href="mailto:24ms0026@iitism.ac.in" target="_blank" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://linkedin.com/in/ayushkumarverma" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/ayushkumarverma" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+  </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 Ayush Kumar Verma. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
-
-
-
-<!-- PROJECTS SECTION -->
-<section class="projects" id="projects">
-  <h2>🚀 Projects</h2>
-  <p class="section-subtitle">A glimpse of what I've built</p>
-
-  <div class="project-grid">
-    <!-- Project 1 -->
-    <a href="https://deploy-real-estate-intelligence-tool-nhzu9oorotyzfp8bgrywwq.streamlit.app/" target="_blank" class="project-card">
-      <img src="assets/images/real-estate-img1.jpg" alt="Project 1">
-      <div class="overlay">
-        <h3>Real Estate Intelligence Platform</h3>
-        <p>Built using Streamlit + Content Filtering</p>
-      </div>
-    </a>
-
-    <!-- Project 2 -->
-    <a href="https://github.com/Ayushms26/SmartCare-AI" target="_blank" class="project-card">
-      <img src="assets/images/AI-in-healthcare-1.jpg" alt="Project 2">
-      <div class="overlay">
-        <h3>AI-Powered Clinical & Mental Health Assistant</h3>
-        <p>Deployed with Flask & ML model</p>
-      </div>
-    </a>
-  </div>
-
-</section>
-
-
-
-<!-- BLOGS SECTION -->
-<section class="blogs" id="blogs">
-  <h2>📝 Blogs</h2>
-  <p class="section-subtitle">Insights, stories, and tutorials I’ve written</p>
-
-  <div class="blog-grid">
-    <!-- Blog 1 -->
-    <a href="https://medium.com/@24ms0026/turning-real-estate-data-into-smart-decisions-my-end-to-end-analytics-system-75e4920dd613" target="_blank" class="blog-card">
-      <img src="assets/images/real-estate-img-blogs.jpg" alt="Blog 1">
-      <div class="blog-overlay">
-        <h3>How I Built a Real Estate ML Platform</h3>
-        <p>From data wrangling to deployment using Streamlit</p>
-      </div>
-    </a>
-
-    <!-- Blog 2 -->
-    <a href="https://medium.com/@24ms0026/a-practical-guide-to-natural-language-processing-nlp-8d1d4052d54a" target="_blank" class="blog-card">
-      <img src="assets/images/nlp-img4.jpg" alt="Blog 2">
-      <div class="blog-overlay">
-        <h3>A Practical Guide to NLP</h3>
-        <p>All about Natural Language Processing</p>
-      </div>
-    </a>
-  </div>
-</section>
-
-<!-- RESUME SECTION -->
-<section class="resume" id="resume">
-  <h2>📄 Resume</h2>
-  <p class="section-subtitle">My academic background, experience, and skills</p>
-
-  <!-- Education -->
-  <div class="resume-block">
-    <h3>🎓 Education</h3>
-    <ul>
-      <li>
-        <strong>M.Sc. in Mathematics and Computing</strong> – IIT (ISM) Dhanbad  
-        <br><span>2024 – 2026 | GPA: 7.50 / 10</span><br>
-      </li>
-      <li>
-        <strong>B.Sc. in Mathematics</strong> – Dr. RML Avadh University  
-        <br><span>2020 – 2023</span><br>
-      </li>
-    </ul>
-  </div>
-
-  <!-- Experience -->
-  <div class="resume-block">
-    <h3>💼 Internship Experience</h3>
-    <ul>
-      <li>
-        <strong>Data Science Intern</strong> – ZeTheta Algorithms, Mumbai  
-        <br><span>May 2025 – Present</span><br>
-        • Built AI models for career prediction, improving matches by 30%.<br>
-        • Deployed NLP microservices via FastAPI integrated into Laravel backend using Supabase/Vercel.
-      </li>
-    </ul>
-  </div>
-
-  <!-- Skills -->
-  <div class="resume-block">
-    <h3>🛠️ Technical Skills</h3>
-    <ul class="skills-list">
-      <li>Python</li><li>C++</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>Keras</li>
-      <li>TensorFlow</li><li>SQL</li><li>Streamlit</li><li>FastAPI</li><li>BERT</li><li>Git</li>
-      <li>EDA</li><li>Google Colab</li><li>NLP</li><li>Transformers</li>
-    </ul>
-  </div>
-
-  <!-- Certifications -->
-  <div class="resume-block">
-    <h3>🏆 Certifications</h3>
-    <ul>
-      <li>Data Science Mentorship Program – CampusX</li>
-      <li>AI / Machine Learning Workshop – IIT Patna</li>
-    </ul>
-  </div>
-
-  <!-- Download Resume -->
-  <div class="download-resume">
-    <a href="assets/images/IIT_Dhanbad___Resume__OnCampus___8_ (2).pdf" target="_blank" class="btn">
-      ⬇️ Download Full Resume (PDF)
-    </a>
-  </div>
-</section>
-
-
-<!-- CONTACT SECTION -->
-<section class="contact" id="contact">
-  <h2>📬 Contact Me</h2>
-  <p class="section-subtitle">Let’s connect and create something awesome!</p>
-
-  <div class="contact-info">
-    <div class="contact-card">
-      <h4>Email</h4>
-      <p><a href="mailto:24ms0026@iitism.ac.in">24ms0026@iitism.ac.in</a></p>
-    </div>
-
-    <div class="contact-card">
-      <h4>Phone</h4>
-      <p><a href="tel:+917754964622">+91 7754964622</a></p>
-    </div>
-
-    <div class="contact-card">
-      <h4>LinkedIn</h4>
-      <p><a href="https://www.linkedin.com/in/24ms0026" target="_blank">linkedin.com/in/24ms0026</a></p>
-    </div>
-
-    <div class="contact-card">
-      <h4>GitHub</h4>
-      <p><a href="https://github.com/Ayushms26" target="_blank">github.com/Ayushms26</a></p>
-    </div>
-  </div>
-</section>
