@@ -301,12 +301,14 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Projects Section */
+/* ============================= */
+/* Projects Section               */
+/* ============================= */
 .projects-section h2 {
   text-align: center;
 }
 
-/* Projects Section */
+/* Section container */
 .projects-section {
   background: #e6f7ff; /* Light Cyan Blue */
   padding: 3rem 2rem;
@@ -315,6 +317,7 @@ section {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Grid layout for project cards */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -322,6 +325,7 @@ section {
   margin-top: 2rem;
 }
 
+/* Individual project card */
 .project-card {
   background: var(--card-bg);
   border-radius: var(--radius-card);
@@ -338,6 +342,7 @@ section {
   box-shadow: var(--shadow-dark);
 }
 
+/* Project image */
 .project-image {
   width: 100%;
   height: 200px;
@@ -345,6 +350,7 @@ section {
   border-bottom: 1px solid var(--border-color);
 }
 
+/* Project details */
 .project-details {
   padding: 1.5rem;
   display: flex;
@@ -363,6 +369,73 @@ section {
   font-size: 1rem;
   flex-grow: 1;
 }
+
+/* Tech stack badges */
+.tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech-badge {
+  background: #f0f4f7;
+  color: #3f51b5;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* ============================= */
+/* Project Links (GitHub + Demo) */
+/* ============================= */
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background-color: #0077cc;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-btn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* GitHub button style */
+.github-btn {
+  background-color: #24292e; /* GitHub dark */
+}
+
+.github-btn:hover {
+  background-color: #000;
+}
+
+/* Demo button style */
+.demo-btn {
+  background-color: #28a745; /* Green */
+}
+
+.demo-btn:hover {
+  background-color: #1e7e34;
+}
+
 
 .tech-stack-list {
   display: flex;
@@ -548,6 +621,7 @@ section {
 .certificate-card h3 {
   font-size: 1rem;   /* smaller font */
   margin-bottom: 8px;
+  color: #6f2fdd;
 }
 
 .certificate-card p {
