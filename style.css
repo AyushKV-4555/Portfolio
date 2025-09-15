@@ -1,10 +1,12 @@
 /* Custom Properties and Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary-color: #3f51b5; /* Deeper blue for primary actions */
-  --secondary-color: #00bcd4; /* Light blue for secondary highlights */
+  /* Updated colors for a Data Science theme */
+  --primary-color: #4a90e2; /* Modern Blue */
+  --secondary-color: #6a0572; /* Deep Purple for accent */
   --text-primary: #212121;
   --text-secondary: #5a5a5a;
   --bg-main: #f5f7fa;
@@ -15,7 +17,7 @@
   --border-color: #e0e0e0;
   --radius-card: 12px;
   --radius-btn: 25px;
-  --font-heading: 'Montserrat', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
   --font-body: 'Roboto', sans-serif;
 }
 
@@ -114,7 +116,6 @@ section {
   min-height: 80vh;    /* slightly taller than full screen */
 }
 
-
 .hero-container {
   display: flex;
   align-items: center;
@@ -137,7 +138,7 @@ section {
 .hero-text .tagline {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #3a5ccf;
+  color: var(--primary-color);
   margin-bottom: 15px;
 }
 
@@ -153,16 +154,15 @@ section {
   justify-content: center;
 }
 
-/* ✅ Updated profile image styling */
-.profile-img {
-  width: 500px;   /* increase size here */
-  height: 500px;  /* same height for circle */
+/* Updated profile image styling */
+.hero-section .profile-img {
+  width: 250px !important;
+  height: 250px !important;
   border-radius: 50%;
   object-fit: cover;
-  border: 6px solid #3a5ccf;
+  border: 6px solid var(--primary-color);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
-
 
 /* About Me Section */
 .about-section {
@@ -270,7 +270,7 @@ section {
   box-shadow: var(--shadow-dark);
 }
 
-/* Skill Badges */
+/* Skill Badges - Hover removed as requested */
 .skills-section h3 {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -292,14 +292,16 @@ section {
   font-size: 0.9rem;
   border: 1px solid #bbdefb;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  transition: all 0.2s ease;
+  /* Hover effect removed as requested */
 }
 
+/*
 .skill-badge:hover {
   background: #bbdefb;
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+*/
 
 /* ============================= */
 /* Projects Section               */
@@ -446,7 +448,7 @@ section {
 
 .tech-badge {
   background: #f0f4f7;
-  color: #3f51b5;
+  color: var(--primary-color);
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.8rem;
@@ -581,6 +583,15 @@ section {
   flex-wrap: wrap;
   gap: 0.6rem;
 }
+
+/* Hover removed from skills list */
+/*
+.skills-list-small .skill-badge:hover {
+  background: #bbdefb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+*/
 
 .certifications-list {
   list-style: none;
@@ -866,4 +877,3 @@ form button:hover {
 .cert-info .btn-link:hover {
   border-color: #007acc;
 }
-
